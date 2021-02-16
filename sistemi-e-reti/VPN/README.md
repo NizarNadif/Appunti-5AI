@@ -45,10 +45,8 @@ Una VPN, acronimo di Virtual Private Network, è una rete privata creata all'int
 In questo tipo di VPN un client instaura una connessione con il server (client-to-LAN).
 Una VPN può essere installata:
 
-- con un NAS
-  <br>
-  ![NAS VPN image](./assets/NAS.png "remote access VPN with NAS")
-  <br>
+- con un NAS <br>
+  ![NAS VPN image](./assets/NAS.png "remote access VPN with NAS") <br>
 
   > NAS è un acronimo di Network Access Server, un server dedicato, od un processo di un server condiviso, alla gestione degli accessi di client esterni alla propria rete.
 
@@ -60,17 +58,14 @@ Una VPN può essere installata:
   > - Authorization -> cosa ti è permesso di fare
   > - Accounting -> tracciamento fino al logout
 
-- con un software VPN client
-  <br>
-  ![NAS VPN image](./assets/SoftwareVPN.png "remote access VPN with a VPN client software")
-  <br>
+- con un software VPN client <br>
+  ![NAS VPN image](./assets/SoftwareVPN.png "remote access VPN with a VPN client software") <br>
 
   I sistemi operativi sono dotati di software nativi che permettono ai dispositivi di connettersi ad una VPN remote-access, occorre dunque che nella rete VPN venga configurato il firewall in modo da poter formire una barriera fra la LAN ed internet. Un'alternativa ai software nativi del SO sono i software di privati come OpenVPN, NordVPN, GhostVPN, Surfshark, etc.
 
 ### _Site-to-Site VPN_
 
-![site-to-site VPN image](./assets/site-to-site.png "site-to-site VPN")
-<br>
+![site-to-site VPN image](./assets/site-to-site.png "site-to-site VPN") <br>
 
 Permette una connessione sicura tra sedi diverse, ognugna con la propria LAN (LAN-to-LAN).
 <br>
@@ -106,6 +101,7 @@ La sicurezza di un collegamento VPN viene garantita tramite:
 
 ## **Protocolli per reti VPN**
 
+![Protocolli VPN](./assets/protocolliVPN.png "protocolli VPN") <br>
 È possibile realizzare una VPN su ogni livello della pila OSI e la scelta che induce a scegliere un protocollo piuttosto che un altro dipende dai requisiti di sicurezza dei quali necessita l'utente che deve decidere a che livello della pila realizzare la VPN. <br>
 Tutti i protocolli implementano meccanismi di cifratura e tunneling che incapsulano il pacchetto di dati creandogli attorno una protezione durante la trasmissione e lo de-incapsulano alla ricezione.
 
@@ -149,8 +145,7 @@ Per un buon funzionamento di IPsec è necessario uno schema SA automatico che si
 ## Modalità di trasporto e di tunnel
 
 IPSec può essere utilizzato in due modalità: trasporto e tunnel. Nella modalità trasporto, i dati relativi al protocollo IPSec sono inseriti nel datagram IP, tra l’header IP e quello subito superiore (solitamente TCP o UDP). Questo tipo di soluzione può essere necessaria nel caso di comunicazioni end-to-end. In tutti gli altri casi è obbligatorio utilizzare la modalità tunnel. In questo caso il pacchetto IP viene inglobato in quello IPSec al quale, a sua volta, viene aggiunto un nuovo header IP con gli indirizzi dei security gateways che stanno ai due capi del tunnel. <br>
-![modalità ipsec](./assets/IPSECmodes.png "modalità IPsec")
-<br>
+![modalità ipsec](./assets/IPSECmodes.png "modalità IPsec") <br>
 Da questa immagine si vede chiaramente come i campi dell’header IP non siano assolutamente protetti nel caso di modalità trasporto, mentre la protezione è totale per quanto riguarda la modalità tunnel.
 
 ### Modalità ESP
