@@ -1,16 +1,9 @@
-# **VPN**
+# Legenda
 
-Una VPN, acronimo di Virtual Private Network, è una rete privata creata all'interno di un'infrastruttura pubblica, internet nel quale possiamo creare i collegamenti, al fine di poter realizzare l'homeworking ed il teleworking in totale sicurezza.
-
-- **homeworking:** tipologia di lavoro nella quale un utente può collegarsi da casa ad una rete aziendale come se fosse fisicamente connesso a quest'ultima.
-  - _es. connessione, da casa, alla rete del proprio ufficio tramite una VPN_
-- **teleworking:** tipologia di lavoro che permette di connettersi alla rete aziendale da qualsiasi luogo tramite il proprio dispositivo mobile.
-
-## Legenda
-
+- [Introduzione](#VPN)
 - [tipologie di VPN](#tipologie-di-VPN)
-  - [Remote Access VPN: client-to-LAN](#Remote-Access-VPN:-client-to-LAN)
-  - [Site-to-Site VPN: LAN-to-LAN](#Site-to-Site-VPN:-LAN-to-LAN)
+  - [Remote Access VPN](#Remote-Access-VPN)
+  - [Site-to-Site VPN](#Site-to-Site-VPN)
 - [Sicurezza nelle VPN](#Sicurezza-nelle-VPN)
 - [Protocolli per reti VPN](#Protocolli-per-reti-VPN)
 - [Protocollo IPsec](#Protocollo-IPsec)
@@ -18,6 +11,14 @@ Una VPN, acronimo di Virtual Private Network, è una rete privata creata all'int
   - [Modalità di trasporto e di tunnel](#modalità-di-trasporto-e-di-tunnel)
     - [Modalità ESP](#Modalità-ESP)
     - [Modalità AH](#Modalità-AH)
+
+# **VPN**
+
+Una VPN, acronimo di Virtual Private Network, è una rete privata creata all'interno di un'infrastruttura pubblica, internet nel quale possiamo creare i collegamenti, al fine di poter realizzare l'homeworking ed il teleworking in totale sicurezza.
+
+- **homeworking:** tipologia di lavoro nella quale un utente può collegarsi da casa ad una rete aziendale come se fosse fisicamente connesso a quest'ultima.
+  - _es. connessione, da casa, alla rete del proprio ufficio tramite una VPN_
+- **teleworking:** tipologia di lavoro che permette di connettersi alla rete aziendale da qualsiasi luogo tramite il proprio dispositivo mobile.
 
 ## vantaggi
 
@@ -39,9 +40,9 @@ Una VPN, acronimo di Virtual Private Network, è una rete privata creata all'int
 
 ## **tipologie di VPN**
 
-### _Remote Access VPN: client-to-LAN_
+### _Remote Access VPN_
 
-In questo tipo di VPN un client instaura una connessione con il server.
+In questo tipo di VPN un client instaura una connessione con il server (client-to-LAN).
 Una VPN può essere installata:
 
 - con un NAS
@@ -66,12 +67,12 @@ Una VPN può essere installata:
 
   I sistemi operativi sono dotati di software nativi che permettono ai dispositivi di connettersi ad una VPN remote-access, occorre dunque che nella rete VPN venga configurato il firewall in modo da poter formire una barriera fra la LAN ed internet. Un'alternativa ai software nativi del SO sono i software di privati come OpenVPN, NordVPN, GhostVPN, Surfshark, etc.
 
-### _Site-to-Site VPN: LAN-to-LAN_
+### _Site-to-Site VPN_
 
 ![site-to-site VPN image](./assets/site-to-site.png "site-to-site VPN")
 <br>
 
-Permette una connessione sicura tra sedi diverse, ognugna con la propria LAN.
+Permette una connessione sicura tra sedi diverse, ognugna con la propria LAN (LAN-to-LAN).
 <br>
 Ne esistono di due tipi:
 
