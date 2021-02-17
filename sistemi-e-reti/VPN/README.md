@@ -61,18 +61,18 @@ Una VPN può essere installata:
 - con un software VPN client <br>
   ![NAS VPN image](./assets/SoftwareVPN.png "remote access VPN with a VPN client software") <br>
 
-  I sistemi operativi sono dotati di software nativi che permettono ai dispositivi di connettersi ad una VPN remote-access, occorre dunque che nella rete VPN venga configurato il firewall in modo da poter formire una barriera fra la LAN ed internet. Un'alternativa ai software nativi del SO sono i software di privati come OpenVPN, NordVPN, GhostVPN, Surfshark, etc.
+  I sistemi operativi sono dotati di software nativi che permettono ai dispositivi di connettersi ad una VPN remote-access, occorre dunque che nella rete VPN venga configurato il firewall in modo da poter fornire una barriera fra la LAN ed internet. Un'alternativa ai software nativi del SO sono i software di privati come OpenVPN, NordVPN, GhostVPN, Surfshark, etc.
 
 ### _Site-to-Site VPN_
 
 ![site-to-site VPN image](./assets/site-to-site.png "site-to-site VPN") <br>
 
-Permette una connessione sicura tra sedi diverse, ognugna con la propria LAN (LAN-to-LAN).
+Permette una connessione sicura tra sedi diverse, ognuna con la propria LAN (LAN-to-LAN).
 <br>
 Ne esistono di due tipi:
 
-- nelle internet based VPN vengono collegate più LAN di una stessa azienda. _es. sedi diverse_
-- nelle extranet based VPN vengono collegate delle LAN di aziende diverse, volte a collaborare.
+- intranet based VPN => vengono collegate più LAN di una stessa azienda. _es. sedi diverse_
+- extranet based VPN => vengono collegate delle LAN di aziende diverse, volte a collaborare.
 
 ---
 
@@ -85,7 +85,7 @@ La sicurezza di un collegamento VPN viene garantita tramite:
 - autenticazione dell'identità: <br>
   processo in cui un sistema informatico, un applicativo od un utente verifica la corretta identità di un altro sistema informatico, applicativo o utente che ha intenzione di comunicare attraverso una connessione, al fine di concedergli l'autorizzazione a usufruire dei relativi servizi associati.
 
-  - autorizzazione a più fattori (multi-factor authentication o MFA): <br>
+  - autorizzazione a più fattori (_multi-factor authentication_ o **MFA**): <br>
     dopo il login, effettuato fornendo la coppia username - password al sistema al quale si vuole accedere, viene chiesto all'utente un codice tramite chiave elettronica che cambia ogni volta (OTP -> one-time password, impronta digitale, QR Code, etc).
 
 - accounting: <br>
@@ -94,8 +94,8 @@ La sicurezza di un collegamento VPN viene garantita tramite:
 - confidenzialità dei dati tramite cifratura (o crittografia): <br>
   questa può essere effettuata facendo uso degli algoritmi di crittografia asimmetrica (AES, 3DES, Idea, etc). Le chiavi utilizzate da questi algoritmi vengono scambiate attraverso dei protocolli di sicurezza come l'**IKE** (_Internet Key Exchange_).
 - tunneling: <br>
-  processo che incapsula il pacchetto di dati all’interno di un altro pacchetto che viene spedito sulla rete al fine di proteggerlo in internet. Ovvero, i dati vengono imbustati due volte per far si che essi siano trasmessi solamente ai destinatari finali autorizzati.
-  <br> Questo avviene tramite due modalità: transport mode e tunnel mode.
+  processo che incapsula il pacchetto di dati all’interno di un altro pacchetto che viene spedito sulla rete al fine di proteggerlo in internet. Ovvero, i dati vengono imbustati due volte per far si che essi siano trasmessi solamente ai destinatari finali autorizzati.  
+  Questo avviene tramite due modalità: transport mode e tunnel mode.
 
 ---
 
@@ -107,7 +107,7 @@ Tutti i protocolli implementano meccanismi di cifratura e tunneling che incapsul
 
 ## **Protocollo IPsec**
 
-Fra tutti i protocolli VPN, il più sicuro e completo è il protocollo **IPsec** (IP secuirity), un protocollo che agisce nel livello di rete (il 3o) della pila OSI.
+Fra tutti i protocolli VPN, il più sicuro e completo è il protocollo **IPsec** (_IP Secuirity_), un protocollo che agisce nel livello di rete (il 3o) della pila OSI.
 Agendo al livello di rete, il protocollo IPsec è in grado di crittografare i _datagram IP_ che contengono i dati che vogliamo mantenere segreti (possano essere UDP, TCP, ICMP) e l'header nel quale vengono indicati il mittente ed il destinatario del pacchetto. <br>
 Dunque possiamo dire che il protocollo IPsec assicura:
 
