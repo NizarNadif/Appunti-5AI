@@ -20,7 +20,7 @@ Una VPN, acronimo di Virtual Private Network, è una rete privata creata all'int
   - _es. connessione, da casa, alla rete del proprio ufficio tramite una VPN_
 - **teleworking:** tipologia di lavoro che permette di connettersi alla rete aziendale da qualsiasi luogo tramite il proprio dispositivo mobile.
 
-## vantaggi
+## vantaggi di una private network
 
 - larghezza di banda sempre disponibile
 - nessun problema di accesso
@@ -28,7 +28,7 @@ Una VPN, acronimo di Virtual Private Network, è una rete privata creata all'int
 - prestazioni garantite
 - sicurezza garantita
 
-## svantaggi
+## svantaggi di una private network
 
 - alti costi di installazione
 - costi ricorrenti di manutenzione
@@ -36,6 +36,13 @@ Una VPN, acronimo di Virtual Private Network, è una rete privata creata all'int
 - mancanza di scalabilità
 - rischio di blocco della rete in caso di grave guasto su un canale
 
+## vantaggi di una VPN
+
+- costi ridotti
+- migliorano le comunicazioni
+- flessibilità e scalabilità
+- sicurezza e affidabilità
+- indipendenti dagli standard tecnologici dei primi 2 livelli della pila ISO-OSI
 ---
 
 ## **tipologie di VPN**
