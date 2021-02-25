@@ -99,7 +99,7 @@ La sicurezza di un collegamento VPN viene garantita tramite:
   insieme di procedimenti atti a misurare le risorse concesse ad un utente durante l'accesso, il quantitativo di traffico in entrata ed in uscita durante una sua sessione di lavoro e la durata della sessione di lavoro.
 
 - confidenzialità dei dati tramite cifratura (o crittografia): <br>
-  questa può essere effettuata facendo uso degli algoritmi di crittografia asimmetrica (AES, 3DES, Idea, etc). Le chiavi utilizzate da questi algoritmi vengono scambiate attraverso dei protocolli di sicurezza come l'**IKE** (_Internet Key Exchange_).
+  questa può essere effettuata facendo uso degli algoritmi di crittografia simmetrica (AES, 3DES, Idea, etc). Le chiavi utilizzate da questi algoritmi vengono scambiate attraverso dei protocolli di sicurezza come l'**IKE** (_Internet Key Exchange_).
 - tunneling: <br>
   processo che incapsula il pacchetto di dati all’interno di un altro pacchetto che viene spedito sulla rete al fine di proteggerlo in internet. Ovvero, i dati vengono imbustati due volte per far si che essi siano trasmessi solamente ai destinatari finali autorizzati.  
   Questo avviene tramite due modalità: transport mode e tunnel mode.
