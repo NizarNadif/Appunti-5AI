@@ -114,7 +114,7 @@ Tutti i protocolli implementano meccanismi di cifratura e tunneling che incapsul
 
 ## **Protocollo IPsec**
 
-Fra tutti i protocolli VPN, il più sicuro e completo è il protocollo **IPsec** (_IP Secuirity_), un protocollo che agisce nel livello di rete (il 3o) della pila OSI.
+Fra tutti i protocolli VPN, il più sicuro e completo è il protocollo **IPsec** (_IP Security_), un protocollo che agisce nel livello di rete (il 3o) della pila OSI.
 Agendo al livello di rete, il protocollo IPsec è in grado di crittografare i _datagram IP_ che contengono i dati che vogliamo mantenere segreti (possano essere UDP, TCP, ICMP) e l'header nel quale vengono indicati il mittente ed il destinatario del pacchetto. <br>
 Dunque possiamo dire che il protocollo IPsec assicura:
 
@@ -138,13 +138,13 @@ Una SA è identificata da:
 - l'indirizzo IP di destinazione della connessione simplex
 - un **SPI** (_Security Parameter Index_), detto indice dei parametri di sicurezza, è un identificatore a 32 bit della connessione
 
-  > Per ogni SA ciascun datagram IPSec avrà un campo speciale per il SPI. In questo campo tutti i datagram di quella SA useranno lo stesso valore SPI.
+  > Per ogni SA ciascun datagram IPsec avrà un campo speciale per il SPI. In questo campo tutti i datagram di quella SA useranno lo stesso valore SPI.
 
 Per un buon funzionamento di IPsec è necessario uno schema SA automatico che si occupi della gestione delle chiavi; per fare questo ci sono due protocolli principalmente utilizzati:
 
 - il protocollo **ISAKMP** (_Internet Security Association & Key Management Protocol_) il quale definisce le procedure per stabilire e interrompere le SA.
   Esso prevede due fasi:
-  1. fase in cui gli end-points della comunicazione siautenticano e si accordano su un insieme di funzioni crittografiche per lo scambio
+  1. fase in cui gli end-points della comunicazione si autenticano e si accordano su un insieme di funzioni crittografiche per lo scambio
      dei dati;
   2. fase in cui avviene lo scambio vero e proprio delle SA.
 - il protocollo **IKE** (_Intenet Key Exchange_)
@@ -201,7 +201,7 @@ Da questa immagine si vede chiaramente come i campi dell’header IP non siano a
 
 - modalità tunnel: <br>
   come con i pacchetti inviati nella tunnel mode facendo uso del protocollo ESP, il pacchetto IP viene incapsulato in un altro pacchetto IP; così facendo garantiamo l'autenticità, tramite l'AH, del mittente, oltre che dei dati. <br>
-  La struttra del pacchetto è la seguente:
+  La struttura del pacchetto è la seguente:
 
   - Nuova intestazione IP
     - Intestazione AH
