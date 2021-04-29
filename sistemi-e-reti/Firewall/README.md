@@ -6,19 +6,23 @@ Il Firewall indica un processo attivo su un sistema in grado di controllare, a v
 ## **tipologie**
 
 ### _personal firewall_
-I sistemi firewall possono essere dei programmi software da installare su un host di una rete sicura. Il programma ha lo scopo di proteggere l'host e controlla il traffico che circola sulla sua scheda di rete.
+I sistemi firewall possono essere dei programmi software da installare su un host di una rete sicura. Il programma ha lo scopo di proteggere l'host e controlla il traffico che circola sulla sua scheda di rete.<br>
+![personal firewall](./assets/personal.png "personal firewall") <br>
 
 ### _firewall perimetrale_
-Con firewall perimetrale ci si riferisce a quei tipi di firewall che vengono più comunemente riconosciuti come firewall: quelli installati su  almeno due interfacce di un apparato router, una di queste è connessa ad una rete sicura (_ex. rete privata, anche detta **trust**_) e l'altra ad una rete insicura (_ex. Internet, rete pubblica_).
+Con firewall perimetrale ci si riferisce a quei tipi di firewall che vengono più comunemente riconosciuti come firewall: quelli installati su  almeno due interfacce di un apparato router, una di queste è connessa ad una rete sicura (_ex. rete privata, anche detta **trust**_) e l'altra ad una rete insicura (_ex. Internet, rete pubblica_). <br>
+![firewall perimetrale](./assets/perimetrale.png "firewall perimetrale") <br>
 
 Queste tipologie di firewall si diramano a loro volta in:
 
 - **firewall hardware**: 
 un processo che effettua il controllo nelle interfacce di un apparato hardware con almeno due interfacce di rete.
-Anche in questo apparato un'interfaccia deve essere collegata ad una rete trust e l'altra ad una rete sicura; facendo ciò questo apparato hardware svolge anche la funzione di router e può sostituirlo come apparato di (inter)connessione fra una rete privata ed una rete pubblica.
+Anche in questo apparato un'interfaccia deve essere collegata ad una rete trust e l'altra ad una rete sicura; facendo ciò questo apparato hardware svolge anche la funzione di router e può sostituirlo come apparato di (inter)connessione fra una rete privata ed una rete pubblica. <br>
+![firewall hardware](./assets/hardware.png "firewall hardware") <br>
 
 - **application layer firewall**: 
-un'applicazione di livello 7 (Application layer: 7o ed ultimo livello ISO/OSI) che opera su più interfacce di rete di una macchina server che agisce da router; questo tipo di firewall può essere integrato con applicazioni di rete che effettuano il controllo della connessione e l'ottimizzazione del traffico.
+un'applicazione di livello 7 (Application layer: 7o ed ultimo livello ISO/OSI) che opera su più interfacce di rete di una macchina server che agisce da router; questo tipo di firewall può essere integrato con applicazioni di rete che effettuano il controllo della connessione e l'ottimizzazione del traffico. <br>
+![application layer firewall](./assets/application-layer.png "application layer firewall") <br>
 
 ## **classificazione per livello di controllo**
 I firewall si possono classificare, oltre che per tipo di apparato e livello nel quale agiscono, anche in base al tipo di ispezione che effettuano:
