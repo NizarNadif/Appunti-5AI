@@ -9,12 +9,9 @@ Il Firewall indica un processo attivo su un sistema in grado di controllare, a v
 I sistemi firewall possono essere dei programmi software da installare su un host di una rete sicura. Il programma ha lo scopo di proteggere l'host e controlla il traffico che circola sulla sua scheda di rete.
 
 ### _firewall perimetrale_
-Con firewall perimetrale ci si riferisce a quei tipi di firewall che vengono più comunemente riconosciuti come firewall: quelli installati su un apparato router che comunica con una rete pubblica.
+Con firewall perimetrale ci si riferisce a quei tipi di firewall che vengono più comunemente riconosciuti come firewall: quelli installati su  almeno due interfacce di un apparato router, una di queste è connessa ad una rete sicura (_ex. rete privata, anche detta **trust**_) e l'altra ad una rete insicura (_ex. Internet, rete pubblica_).
 
 Queste tipologie di firewall si diramano a loro volta in:
-
-- **firewall su almeno due interfacce del router**: 
-una delle due interfacce è connessa alla rete sicura (_ex. rete privata, anche detta **trust**_) ed l'altra alla rete insicura (_ex. Internet_).
 
 - **firewall hardware**: 
 un processo che effettua il controllo nelle interfacce di un apparato hardware con almeno due interfacce di rete.
